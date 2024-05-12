@@ -31,3 +31,6 @@ When the same URL is used in both the publisher and subscriber programs, it mean
 ![img.png](static/img2.png)
 <br>The second graph depicts a rise in message frequency over time intervals. This correlates with the execution of the cargo run command in the publisher project. Each time the publisher is executed, there's an uptick in message rates on RabbitMQ, serving its purpose as a message queue.</br>
 
+<br></br>
+![img_1.png](static/img_1.png)
+<br>The image above illustrates a scenario where the queue contained 10 messages at a certain point. This occurs because the subscriber requires more time to process each event in the message queue, resulting in a backlog of messages. Since the publisher can publish messages faster than the subscriber can process them, the queue accumulates over time.</br>
