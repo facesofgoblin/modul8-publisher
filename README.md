@@ -19,5 +19,11 @@ When the same URL is used in both the publisher and subscriber programs, it mean
 
 ## Proof Rabbitmq Page
 <br></br>
-
 ![img.png](static/img.png)
+<br></br>
+
+## What's Happening?
+<br></br>
+![img.png](static/img1.png)
+<br>The image illustrates that when the publisher runs, it sends the hardcoded data from its code to the message queue. Subscribers connected to the message queue receive this data and output it in the console based on the predefined code.</br>
+
