@@ -27,3 +27,7 @@ When the same URL is used in both the publisher and subscriber programs, it mean
 ![img.png](static/img1.png)
 <br>The image illustrates that when the publisher runs, it sends the hardcoded data from its code to the message queue. Subscribers connected to the message queue receive this data and output it in the console based on the predefined code.</br>
 
+<br></br>
+![img.png](static/img2.png)
+<br>The second graph depicts a rise in message frequency over time intervals. This correlates with the execution of the cargo run command in the publisher project. Each time the publisher is executed, there's an uptick in message rates on RabbitMQ, serving its purpose as a message queue.</br>
+
