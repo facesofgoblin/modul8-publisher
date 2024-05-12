@@ -34,3 +34,7 @@ When the same URL is used in both the publisher and subscriber programs, it mean
 <br></br>
 ![img_1.png](static/img_1.png)
 <br>The image above illustrates a scenario where the queue contained 10 messages at a certain point. This occurs because the subscriber requires more time to process each event in the message queue, resulting in a backlog of messages. Since the publisher can publish messages faster than the subscriber can process them, the queue accumulates over time.</br>
+
+<br></br>
+![img_2.png](static/img_2.png)
+<br>The sudden increase in the message queue diminishes faster than before, possibly because the subscriber's main.rs file incorporates a sleep function (thread::sleep(ten_millis);), introducing a one-second delay before printing each message. This delay likely enables the messages to be processed sequentially, thereby reducing the backlog in the queue more effectively.</br>
