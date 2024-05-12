@@ -16,3 +16,8 @@ This URL is commonly used to connect to a message broker using the Advanced Mess
 "5672" specifies the port number on which the message broker is listening for incoming connections. This is the default port for AMQP.
 When the same URL is used in both the publisher and subscriber programs, it means that both programs are connecting to the same message broker instance running on the same machine, using the same authentication credentials and port number. This ensures that the publisher can publish messages to the same message broker instance to which the subscriber is subscribed.
 </br>
+
+## Proof Rabbitmq Page
+<br></br>
+
+![img.png](static/img.png)
